@@ -1,4 +1,4 @@
-# storyblok-assets-cloudinary
+# storyblok-cloudinary-assets
 
 ## Build Setup
 

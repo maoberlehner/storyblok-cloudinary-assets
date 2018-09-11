@@ -1,5 +1,5 @@
 {
-  "name": "storyblok-assets-cloudinary",
+  "name": "storyblok-cloudinary-assets",
   "description": "A Storyblok Field-Type Plugin Project",
   "author": "Markus Oberlehner",
   "scripts": {

@@ -74,7 +74,7 @@ export default {
     initWith() {
       return {
         assets: [],
-        plugin: `storyblok-assets-cloudinary`,
+        plugin: `cloudinary-assets`,
       };
     },
   },
