@@ -8,12 +8,29 @@ Storyblok Cloudinary Assets is a custom field type plugin for the headless CMS S
 
 ### Deployment
 
-You can start by cloning this repository and then run the build command and copy and paste the generated code into Storyblok when it's done.
+You can start by cloning this repository and installing its dependencies.
 
 ```bash
 git clone git@github.com:maoberlehner/storyblok-cloudinary-assets.git
 cd storyblok-cloudinary-assets
 npm install
+```
+
+Because Storyblok plugins share a global namespace, you have to choose a distinct name for your plugin first. Go to `src/Plugin.vue` and change the following line of code.
+
+```diff
+     initWith() {
+       return {
+         assets: [],
+-        plugin: `cloudinary-assets`,
++        plugin: `YOUR-DISTINCT-NAME`,
+       };
+     },
+```
+
+Now you can run the build command and copy and paste the generated code into Storyblok when it's done.
+
+```bash
 npm run build
 ```
 
@@ -21,7 +38,7 @@ Next go to the [Plugins page](https://app.storyblok.com/#!/me/plugins) and click
 
 ![create new cloudinary asset storyblok plugin](https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,q_auto,w_600/v1536838793/blog/2018-09-14/create-new-cloudinary-asset-storyblok-plugin)
 
-It is important to name your new custom field type plugin `cloudinary-assets` for it to work.
+It is important to choose the same name you specified in the `initWith()` method for your plugin to work.
 
 ![storyblok plugin editor](https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,q_auto,w_600/v1536838793/blog/2018-09-14/storyblok-plugin-editor)
 
