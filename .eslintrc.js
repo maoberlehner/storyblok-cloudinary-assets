@@ -7,14 +7,9 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === `production` ? `error` : `warn`,
     'no-debugger': process.env.NODE_ENV === `production` ? `error` : `warn`,
-    'vue/component-name-in-template-casing': [`error`,
+    'vue/component-name-in-template-casing': [
+      `error`,
       `PascalCase`,
-      {
-        ignores: [
-          `nuxt`,
-          `nuxt-link`,
-        ],
-      },
     ],
     'vue/no-v-html': false,
     'vue/html-closing-bracket-spacing': [`error`, {
