@@ -3,46 +3,28 @@
   "description": "A Storyblok Field-Type Plugin Project",
   "author": "Markus Oberlehner",
   "scripts": {
-    "watchify": "watchify -vd -p [ browserify-livereload --host 127.0.0.1 --port 1337 ] -e src/vendor/main.js -o dist/build.js",
-    "serve": "http-server -c 1 -a localhost",
-    "dev": "npm-run-all --parallel watchify serve",
-    "build": "cross-env NODE_ENV=production browserify src/vendor/export.js > dist/export.js",
-    "lint:scripts": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "dev": "npm run serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint:scripts": "vue-cli-service lint",
     "lint:styles": "stylelint 'src/**/*.+(scss|vue)'",
     "lint": "yarn run lint:scripts && yarn run lint:styles"
   },
   "dependencies": {
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^3.3.0",
+    "@vue/cli-service": "^3.3.1",
     "node-vibrant": "^3.2.0-alpha",
-    "vue": "^2.5.22"
+    "vue": "^2.5.22",
+    "vue-template-compiler": "^2.5.22"
   },
   "devDependencies": {
     "@avalanche/eslint-config": "^3.0.0",
     "@avalanche/stylelint-config": "^1.0.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^9.0.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "babel-runtime": "^6.26.0",
-    "babelify": "^8.0.0",
-    "browserify": "^16.2.3",
-    "browserify-livereload": "^1.0.10",
-    "cross-env": "^5.2.0",
-    "ecstatic": "^3.3.0",
-    "eslint": "^5.12.0",
-    "eslint-plugin-import": "^2.14.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.1",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-vue": "^5.1.0",
-    "http-server": "^0.11.1",
-    "npm-run-all": "^4.1.5",
-    "stylelint": "^9.10.0",
-    "uglify-js": "^3.4.9",
-    "vueify": "^9.4.1",
-    "watchify": "^3.11.0"
-  },
-  "browserify": {
-    "transform": [
-      "vueify",
-      "babelify"
-    ]
+    "stylelint": "^9.10.1"
   }
 }

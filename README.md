@@ -89,7 +89,7 @@ The two most notable properties are the `aspect_ratio` and the `dominant_color`.
 npm install
 
 # Serve with hot reload at localhost:8080.
-npm run dev
+npm run serve
 
 # Build for production.
 npm run build
