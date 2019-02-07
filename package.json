@@ -11,18 +11,18 @@
     "lint": "yarn run lint:scripts && yarn run lint:styles"
   },
   "dependencies": {
-    "@vue/cli-plugin-babel": "^3.3.0",
-    "@vue/cli-plugin-eslint": "^3.3.0",
-    "@vue/cli-service": "^3.3.1",
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-eslint": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
     "node-vibrant": "^3.2.0-alpha",
-    "vue": "^2.5.22",
-    "vue-template-compiler": "^2.5.22"
+    "vue": "^2.6.3",
+    "vue-template-compiler": "^2.6.3"
   },
   "devDependencies": {
     "@avalanche/eslint-config": "^3.0.0",
     "@avalanche/stylelint-config": "^1.0.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.12.1",
+    "eslint": "^5.13.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-vue": "^5.1.0",
     "stylelint": "^9.10.1"
