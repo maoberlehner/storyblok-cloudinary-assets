@@ -15,8 +15,8 @@
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
     "node-vibrant": "^3.2.0-alpha",
-    "vue": "^2.6.3",
-    "vue-template-compiler": "^2.6.3"
+    "vue": "^2.6.6",
+    "vue-template-compiler": "^2.6.6"
   },
   "devDependencies": {
     "@avalanche/eslint-config": "^3.0.0",
@@ -24,7 +24,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.13.0",
     "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-vue": "^5.1.0",
+    "eslint-plugin-vue": "^5.2.1",
     "stylelint": "^9.10.1"
   }
 }
