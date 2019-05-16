@@ -1,4 +1,6 @@
-# Storyblok Cloudinary Assets
+# [DEPRECATED] Storyblok Cloudinary Assets
+
+> **DEPRECATED:** this field-type plugin is deprecated in favor of [the official Cloudinary Asset Manager app](https://www.storyblok.com/apps/cloudinary-native).
 
 Storyblok Cloudinary Assets is a Storyblok field-type plugin which makes it possible to use [Cloudinary](https://cloudinary.com/) for managing assets in the headless CMS [Storyblok](https://www.storyblok.com/).
 
